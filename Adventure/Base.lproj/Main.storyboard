@@ -303,10 +303,10 @@
             </objects>
             <point key="canvasLocation" x="1687" y="-124"/>
         </scene>
-        <!--Custom View Controller-->
+        <!--Riddle View Controller-->
         <scene sceneID="qRf-uo-hpt">
             <objects>
-                <viewController id="6ID-mw-jGN" customClass="CustomViewController" sceneMemberID="viewController">
+                <viewController id="6ID-mw-jGN" customClass="RiddleViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ObA-Cj-MAf"/>
                         <viewControllerLayoutGuide type="bottom" id="2Qz-Td-t2V"/>
@@ -330,7 +330,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EPj-31-d5z">
-                                <rect key="frame" x="45" y="209" width="237" height="30"/>
+                                <rect key="frame" x="45" y="232" width="237" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Calls up the ex-girlfriend">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -340,7 +340,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DwQ-Kk-Kz1">
-                                <rect key="frame" x="3" y="247" width="325" height="66"/>
+                                <rect key="frame" x="3" y="270" width="325" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
                                 <state key="normal" title="Drowns his sorrows and drinks the whole bottle"/>
@@ -358,12 +358,45 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What do you call a pig that knows karate?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ib-UE-aeR">
+                                <rect key="frame" x="12" y="165" width="322" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TaG-19-LQf">
+                                <rect key="frame" x="45" y="194" width="82" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Hamchucks">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="wrongAnswer:" destination="6ID-mw-jGN" eventType="touchUpInside" id="iTy-Be-lYO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcd-jN-Yie">
+                                <rect key="frame" x="177" y="194" width="123" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Pork Chop">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="rightAnswer:" destination="6ID-mw-jGN" eventType="touchUpInside" id="K9z-7j-rVA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="smh-1S-aHY"/>
                     <connections>
+                        <outlet property="AnswerOne" destination="TaG-19-LQf" id="CqB-MI-5Cu"/>
+                        <outlet property="AnswerTwo" destination="qcd-jN-Yie" id="eGt-QO-lag"/>
+                        <outlet property="finalTextView" destination="M7p-js-LEb" id="HOR-4R-tHc"/>
+                        <outlet property="girlfriendButton" destination="EPj-31-d5z" id="Wh6-W5-7Xg"/>
                         <outlet property="nameLabel" destination="MW5-77-w5l" id="6D0-nt-5uH"/>
+                        <outlet property="riddleLabel" destination="0Ib-UE-aeR" id="Ffj-NY-EjX"/>
+                        <outlet property="scotchButton" destination="DwQ-Kk-Kz1" id="SeV-sE-KNX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BGN-72-2LH" userLabel="First Responder" sceneMemberID="firstResponder"/>

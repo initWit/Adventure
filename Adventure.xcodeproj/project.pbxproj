@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9BB16EA51922DDE100E03A70 /* RiddleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB16EA41922DDE100E03A70 /* RiddleViewController.m */; };
 		9BEF41891922A29900EABEBF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BEF41881922A29900EABEBF /* Foundation.framework */; };
 		9BEF418B1922A29900EABEBF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BEF418A1922A29900EABEBF /* CoreGraphics.framework */; };
 		9BEF418D1922A29900EABEBF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BEF418C1922A29900EABEBF /* UIKit.framework */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9BB16EA31922DDE100E03A70 /* RiddleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RiddleViewController.h; sourceTree = "<group>"; };
+		9BB16EA41922DDE100E03A70 /* RiddleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RiddleViewController.m; sourceTree = "<group>"; };
 		9BEF41851922A29900EABEBF /* Adventure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Adventure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BEF41881922A29900EABEBF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9BEF418A1922A29900EABEBF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -128,6 +131,8 @@
 				9BEF418F1922A29900EABEBF /* Supporting Files */,
 				9BEF41BF1922AE2C00EABEBF /* CustomViewController.h */,
 				9BEF41C01922AE2C00EABEBF /* CustomViewController.m */,
+				9BB16EA31922DDE100E03A70 /* RiddleViewController.h */,
+				9BB16EA41922DDE100E03A70 /* RiddleViewController.m */,
 			);
 			path = Adventure;
 			sourceTree = "<group>";
@@ -260,6 +265,7 @@
 			files = (
 				9BEF419F1922A29900EABEBF /* ViewController.m in Sources */,
 				9BEF41991922A29900EABEBF /* AppDelegate.m in Sources */,
+				9BB16EA51922DDE100E03A70 /* RiddleViewController.m in Sources */,
 				9BEF41951922A29900EABEBF /* main.m in Sources */,
 				9BEF41C11922AE2C00EABEBF /* CustomViewController.m in Sources */,
 			);
@@ -474,6 +480,7 @@
 				9BEF41B91922A29900EABEBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9BEF41BA1922A29900EABEBF /* Build configuration list for PBXNativeTarget "AdventureTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +489,7 @@
 				9BEF41BC1922A29900EABEBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
