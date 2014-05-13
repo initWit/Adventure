@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CustomViewController.h
 //  Adventure
 //
 //  Created by Richard Fellure on 5/13/14.
@@ -8,9 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-@property NSString *customNameText;
-
-@property NSString *passedInText;
-
+@interface CustomViewController : UIViewController
+@property NSString *buttonText;
+@property NSString *nameText;
 @end
